@@ -1,4 +1,4 @@
-feature "attacking" do
+feature "FEATURE: attacking" do
 	scenario "attack player two" do
 		sign_in_and_play
 		click_button 'Attack'
