@@ -1,8 +1,7 @@
-<%= "#{@player_1.name} vs. #{@player_2.name}"%>
+<%= @current_turn.name + "'s turn'" %></br>
 
-<p><%=@player_2.name%>: 60/60 HP</p>
+<%= "#{@player1.name} vs. #{@player2.name}"%>
+
+<p><%=@player2.name%>: <%= @player2.hitpoints %>/60 HP</p>
 
 <a href="/attack">Attack</a>
-
-
-
