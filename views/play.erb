@@ -1,7 +1,9 @@
-<%= @current_turn.name + "'s turn'" %></br>
+<%= @player1.name + "'s turn'" %></br>
 
 <%= "#{@player1.name} vs. #{@player2.name}"%>
 
 <p><%=@player2.name%>: <%= @player2.hitpoints %>/60 HP</p>
+<p><%=@player1.name%>: <%= @player1.hitpoints %>/60 HP</p>
 
 <a href="/attack">Attack</a>
+

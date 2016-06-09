@@ -15,16 +15,15 @@ class Game
     @players.last
   end
 
-  def attack(player)
-    player.receive_damage
+  def attack
+    attack = Attack.new(@current_turn, opponent(@current_turn))
+    attack.perform_attack
     change_turn
   end
 
   def change_turn
     @current_turn = opponent(@current_turn)
   end
-
-  private
 
   def opponent(current_player)
     @players.find { |player| player != @current_turn }
