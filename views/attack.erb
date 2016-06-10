@@ -4,4 +4,7 @@
 
 <br><%= @game.current_turn.name %>'s turn</br>
 
-<br><a href="/play" class= "button">Next Turn</a></br>
+<!-- <br><a href="/switch_turns" class= "button">Next Turn</a></br> -->
+<form action="/switch-turns" method="post">
+  <input type="submit" value="Next Turn">
+</form>

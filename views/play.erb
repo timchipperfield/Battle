@@ -2,10 +2,9 @@
 <br> <%= @game.current_turn.name %>: <%= @game.current_turn.hit_points %>HP </br>
 <br><%= @game.opponent_of(@current_turn).name %>: <%= @game.opponent_of(@current_turn).hit_points %>HP </br>
 
+
 <%= @game.current_turn.name %>'s turn
 
-<!-- <form action="/attack">
-  <input type="submit" value="Attack">
-</form> -->
-
 <br><a href="/attack" class= "button">Attack</a></br>
+
+current = player 2
