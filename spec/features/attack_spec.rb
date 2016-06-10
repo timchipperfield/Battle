@@ -18,6 +18,7 @@ feature "FEATURE: attacking" do
     click_link 'Attack'
     expect(page).not_to have_content 'Harry: 80HP'
     expect(page).to have_content 'Harry: 70HP'
+
   end
 
 end
