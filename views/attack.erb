@@ -1,5 +1,7 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>
+<br><%= @game.current_turn.name %> attacked <%= @game.opponent_of(@current_turn).name %></br>
 
-<%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
+<br><%= @game.opponent_of(@current_turn).name %>: <%= @game.opponent_of(@current_turn).hit_points %>HP</br>
 
-<%= @game.current_turn.name %>'s turn
+<br><%= @game.current_turn.name %>'s turn</br>
+
+<br><a href="/play" class= "button">Next Turn</a></br>

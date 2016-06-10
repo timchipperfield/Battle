@@ -3,4 +3,9 @@ feature "FEATURE: Check player 2's hit points" do
     sign_in_and_play
     expect(page).to have_content "Harry: 80HP"
   end
+
+  scenario "see Player 1's hit points" do
+    sign_in_and_play
+    expect(page).to have_content "Dave: 80HP"
+  end
 end
