@@ -1,3 +1,5 @@
+require_relative 'attack'
+
 class Game
 
   attr_reader :players, :current_turn
@@ -29,6 +31,14 @@ class Game
     @players.find { |player| player != @current_turn }
   end
 
+  private
 
+  def losers
+    @players.select { |player| player.hitpoints <= 0 }
+  end
+
+  def game_over?
+
+  end
 
 end
