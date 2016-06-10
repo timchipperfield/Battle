@@ -24,4 +24,10 @@ describe Game do
     end
   end
 
+  #describe "#lose_game" do
+   # it "checks if a player's hitpoints are zero" do
+   #   expect()
+   # end
+  #end
+
 end

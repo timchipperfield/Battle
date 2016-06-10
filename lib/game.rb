@@ -27,4 +27,8 @@ class Game
     @players.select { |player| player != @current_turn }.first
   end
 
+  def lose_game?
+    opponent_of(current_turn).hit_points <= 0
+  end
+
 end
